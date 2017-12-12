@@ -1,16 +1,92 @@
 <html>
-    <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    </head>
-    <body>
-        <nav>
-            <div class="nav-wrapper teal lighten-2">
-                <a class="brand-logo center">Electron Calculator</a>
-            </div>
-        </nav>
-        <div class="container">
-            <p>Subtitle</p>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script>window.$ = window.jQuery = require('./jquery-3.2.1.min.js')</script>
+</head>
+
+<body>
+    <script>
+        var contentArr = [];
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                contentArr.push(1);
+                
+            });
+        });
+    </script>
+    <nav>
+        <div class="nav-wrapper teal lighten-2">
+            <a class="brand-logo center">Calculator</a>
         </div>
-    </body>
+    </nav>
+    <div class="container">
+        <table>
+            <tr>
+                <td colspan="4">
+                    <input type="text" value="" class="form-control" id="resultaat" size="13" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" class="btn waves-effect waves-light orange lighten-2 center-align" style="width:50px;height:50px;color:black" id="btn7" value="7">7</button>
+                </td>
+                <td>
+                    <button type="button" class="btn waves-effect waves-light orange lighten-2 center-align" style="width:50px;height:50px;color:black" id="btn8" value="8">8</button>
+                </td>
+                <td>
+                    <button type="button" class="btn waves-effect waves-light orange lighten-2 center-align" style="width:50px;height:50px;color:black" id="btn9" value="9">9</button>
+                </td>
+                <td>
+                    <button type="button" class="btn waves-effect waves-light grey lighten-4 center-align" style="width:50px;height:50px;color:black" id="btnDeel" value="/">/</button>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" class="btn waves-effect waves-light orange lighten-2 center-align" style="width:50px;height:50px;color:black" id="btn4" value="4">4</button>
+                </td>
+                <td>
+                    <button type="button" class="btn waves-effect waves-light orange lighten-2 center-align" style="width:50px;height:50px;color:black" id="btn5" value="5">5</button>
+                </td>
+                <td>
+                    <button type="button" class="btn waves-effect waves-light orange lighten-2 center-align" style="width:50px;height:50px;color:black" id="btn6" value="6">6</button>
+                </td>
+                <td>
+                    <button type="button" class="btn waves-effect waves-light grey lighten-4 center-align" style="width:50px;height:50px;color:black" id="btnMaal" value="*">*</button>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" class="btn waves-effect waves-light orange lighten-2 center-align" style="width:50px;height:50px;color:black" id="btn1" value="1">1</button>
+                </td>
+                <td>
+                    <button type="button" class="btn waves-effect waves-light orange lighten-2 center-align" style="width:50px;height:50px;color:black" id="btn2" value="2">2</button>
+                </td>
+                <td>
+                    <button type="button" class="btn waves-effect waves-light orange lighten-2 center-align" style="width:50px;height:50px;color:black" id="btn3" value="3">3</button>
+                </td>
+                <td>
+                    <button type="button" class="btn waves-effect waves-light grey lighten-4 center-align" style="width:50px;height:50px;color:black" id="btnMin" value="-">-</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" class="btn waves-effect waves-light grey lighten-4 center-align" style="width:50px;height:50px;color:black" id="btnWissen" value="C">C</button>
+                </td>
+                <td>
+                    <button type="button" class="btn waves-effect waves-light orange lighten-2 center-align" style="width:50px;height:50px;color:black" id="btn0" value="0">0</button>
+                </td>
+                <td>
+                    <button type="button" class="btn waves-effect waves-light grey lighten-4 center-align" style="width:50px;height:50px;color:black" id="btnIs" value="=">=</button>
+                </td>
+                <td>
+                    <button type="button" class="btn waves-effect waves-light grey lighten-4 center-align" style="width:50px;height:50px;color:black" id="btnPlus" value="+">+</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
 </html>

@@ -10,9 +10,9 @@ let mainWindow;
 app.on('ready', function(){
     // Create new window
     mainWindow = new BrowserWindow({
-        width: 600,
-        height: 400,
-        title: 'Electron-Calculator'
+        width: 350,
+        height: 550,
+        title: 'Electron-Calculator',
     });
     // Load HTML
     mainWindow.loadURL(url.format({
