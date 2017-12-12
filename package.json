@@ -1,0 +1,25 @@
+{
+  "name": "electron-calculator",
+  "version": "1.0.0",
+  "description": "A simple calculator app built with electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/livelypower/electron-calculator.git"
+  },
+  "keywords": [
+    "electron"
+  ],
+  "author": "Cel Pynenborg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/livelypower/electron-calculator/issues"
+  },
+  "homepage": "https://github.com/livelypower/electron-calculator#readme",
+  "dependencies": {
+    "electron": "^1.7.9"
+  }
+}
